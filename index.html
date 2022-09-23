@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Friends App</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <main class="main">
+        <ul class="cards-wrapper"></ul>
+      </main>
+      <nav class="nav">
+        <form class="form">
+          <fieldset>
+            <input
+              class="search-field"
+              type="search"
+              name="search"
+              id="search"
+            />
+          </fieldset>
+          <fieldset>
+            <input
+              type="radio"
+              name="name-order"
+              id="ascending"
+              value="ascending"
+            />
+            <label for="ascending">A-Z</label
+            ><input
+              type="radio"
+              name="name-order"
+              id="descending"
+              value="descending"
+            />
+            <label for="descending"> Z-A</label>
+          </fieldset>
+          <fieldset>
+            <input type="radio" name="age" id="older" value="older" />
+            <label for="older">Older</label>
+            <input type="radio" name="age" id="younger" value="younger" />
+            <label for="younger">Younger</label>
+          </fieldset>
+          <fieldset>
+            <input type="radio" name="gender" id="all" value="all" checked />
+            <label for="all">All</label>
+            <input type="radio" name="gender" id="female" value="female" />
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="male" value="male" />
+            <label for="male">Male</label>
+          </fieldset>
+
+          <button class="btn-reset" type="reset">Reset</button>
+        </form>
+      </nav>
+    </div>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
