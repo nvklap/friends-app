@@ -117,13 +117,12 @@ body {
 }
 
 .card-content {
-  /* background-image: linear-gradient(
+  background-color: var(--cards-gradient-color-02);
+  background-image: linear-gradient(
     var(--cards-gradient-color-01),
     var(--cards-gradient-color-02),
     var(--cards-gradient-color-03)
-  ); */
-
-  background: var(--cards-gradient-color-02);
+  );
   flex-grow: 1;
   padding: 10px;
 }
