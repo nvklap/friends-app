@@ -85,6 +85,7 @@ body {
   border-radius: 20px;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
   transition: border 0.3s;
 }
 
@@ -94,8 +95,6 @@ body {
 
 .card-title {
   border-bottom: 3px solid var(--cards-border-color);
-  border-top-right-radius: 17px;
-  border-top-left-radius: 17px;
   color: var(--light-purple);
   display: flex;
   font-size: 20px;
@@ -157,8 +156,6 @@ body {
 }
 
 .card-contact {
-  border-bottom-right-radius: 17px;
-  border-bottom-left-radius: 17px;
   border-top: 3px solid var(--cards-border-color);
   display: flex;
   justify-content: space-between;
