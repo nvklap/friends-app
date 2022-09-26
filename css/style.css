@@ -303,7 +303,7 @@ body {
     grid-template-columns:
       minmax(20px, auto) minmax(300px, 1000px)
       minmax(20px, auto);
-    grid-template-rows: minmax(10px, 20px) auto auto minmax(10px, 20px);
+    grid-template-rows: auto auto minmax(10px, 20px);
   }
 
   .aside {
@@ -312,14 +312,15 @@ body {
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
     grid-column: 2/3;
-    grid-row: 2/3;
+    grid-row: 1/2;
+    margin: 10px 0 0;
     position: sticky;
-    top: 0;
+    top: -3px;
   }
 
   .main {
     grid-column: 2/3;
-    grid-row: 3/4;
+    grid-row: 2/3;
   }
 
   .form {
@@ -362,7 +363,6 @@ body {
     grid-template-columns:
       minmax(10px, auto) minmax(250px, 1000px)
       minmax(10px, auto);
-    grid-template-rows: 10px auto auto 10px;
   }
 
   .cards-wrapper {
