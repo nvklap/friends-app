@@ -82,15 +82,17 @@ body {
 }
 
 .card {
+  background-color: var(--cards-border-color);
   border: 3px solid var(--cards-border-color);
   border-radius: 20px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  transition: border 0.3s;
+  transition: border 0.3s background-color 0.3s;
 }
 
 .card:hover {
+  background-color: var(--label-border);
   border-color: var(--label-border);
 }
 
@@ -181,7 +183,18 @@ body {
 }
 
 .aside {
-  align-self: flex-start;
+  text-align: center;
+  position: relative;
+}
+
+.form,
+.btn-reset,
+.search {
+  text-transform: uppercase;
+  font-family: var(--font);
+}
+
+.form {
   background-image: linear-gradient(
     var(--main-gradient-color-01),
     var(--main-gradient-color-02),
@@ -190,14 +203,8 @@ body {
   border: 3px solid var(--aside-border-color);
   border-radius: 20px;
   padding: 10px;
-  text-align: center;
-}
-
-.form,
-.btn-reset,
-.search {
-  text-transform: uppercase;
-  font-family: var(--font);
+  position: sticky;
+  top: 0;
 }
 
 .fieldset {
@@ -306,15 +313,18 @@ body {
   }
 
   .aside {
-    border-top-right-radius: 0;
-    border-top-left-radius: 0;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
     grid-column: 2/3;
     grid-row: 1/2;
     margin: 10px 0 0;
     position: sticky;
     top: -3px;
+  }
+
+  .form {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
   }
 
   .main {
