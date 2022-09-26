@@ -81,7 +81,7 @@ body {
 }
 
 .card {
-  border: 3px solid var(--cards-border-color);
+  border: 5px solid var(--cards-border-color);
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -94,7 +94,7 @@ body {
 }
 
 .card-title {
-  border-bottom: 3px solid var(--cards-border-color);
+  border-bottom: 5px solid var(--cards-border-color);
   color: var(--light-purple);
   display: flex;
   font-size: 20px;
@@ -156,7 +156,7 @@ body {
 }
 
 .card-contact {
-  border-top: 3px solid var(--cards-border-color);
+  border-top: 5px solid var(--cards-border-color);
   display: flex;
   justify-content: space-between;
 }
